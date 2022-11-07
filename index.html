@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E-Shop</title>
+    <link rel="stylesheet" type="text/css" href="src/style/styles.css">
+</head>
+<body>
+    <section class="products">
+        <h1>List of Products</h1>
+        <ul class="products-list">
+            <li>
+                <strong>Ogórki - 12.60zł</strong> <button class="btn-buy-product" data-name="cucumber" data-price="12.60">Buy Now !</button>
+            </li>
+            <li>
+                <strong>Pomarańcze - 7.55zł</strong> <button class="btn-buy-product" data-name="orange" data-price="7.55">Buy Now !</button>
+            </li>
+            <li>
+                <strong>Tatra Pils - 9.99zł</strong> <button class="btn-buy-product" data-name="beer" data-price="9.99">Buy Now !</button>
+            </li>
+        </ul>
+    </section>
+    <section class="basket">
+        <h1>Basket</h1>
+        <ul class="basket-list"></ul>
+            <button class="buy-all-in-basket" disabled>Submit your order</button>
+
+    </section>
+    <section class="admin-add-products">
+        <h1>Administration: Adding Products</h1>
+        <form class="form-add-products">
+            <input type ="text" name="product-name" placeholder="name of product..." required>
+            <input type ="number" name="product-price" placeholder="price for product..." required>
+            <button type ="submit">Add</button>
+        </form>
+    </section>
+    <script src="src/basket.js"></script>
+    <script src="src/ui.js"></script>
+    <script src="src/adminUI.js"></script>
+</body>
+</html>
